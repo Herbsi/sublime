@@ -1,0 +1,26 @@
+// Settings in here override those in "LSP/LSP.sublime-settings"
+{
+    "show_diagnostics_severity_level": 3,
+
+    "clients": {
+        "ccls": {
+            "command": ["ccls"],
+            "languages": [{
+                "scopes": ["source.c"],
+                "syntaxes": ["Packages/C++/C.sublime-syntax"],
+                "languageId": "c"
+            },{
+                "scopes": ["source.c++"],
+                "syntaxes": ["Packages/C++/C++.sublime-syntax"],
+                "languageId": "cpp"
+            },
+            ]
+        },
+        "rust-analyzer": {
+            "command": ["rust-analyzer"],
+            "scopes": ["source.rust"],
+            "syntaxes": ["Packages/Rust/Rust.sublime-syntax", "Packages/Rust Enhanced/RustEnhanced.sublime-syntax"],
+            "languageId": "rust"
+        },
+    }
+}

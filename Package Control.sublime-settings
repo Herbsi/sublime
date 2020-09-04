@@ -1,0 +1,40 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AlignTab",
+		"Anaconda",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"ExpandRegion",
+		"FileManager",
+		"Git",
+		"GitGutter",
+		"GPG",
+		"LaTeX Snippets",
+		"LaTeX-cwl",
+		"LaTeXTools",
+		"LaTeXYZ",
+		"LSP",
+		"MarkdownPreview",
+		"Monokai Extended",
+		"MultiEditUtils",
+		"Nord",
+		"Package Control",
+		"Python 3",
+		"RustFmt",
+		"SideBarEnhancements",
+		"SideBarTools",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"UnicodeMath"
+	],
+	"repositories":
+	[
+		"https://github.com/renerocksai/sublime_zk"
+	]
+}

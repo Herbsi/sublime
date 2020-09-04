@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+<snippet>
+    <content><![CDATA[${1:Type your snippet here}]]$NOT_DEFINED></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>$2</tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>$3</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>${4:My Fancy Snippet}</description>
+</snippet>
+        ]]>
+    </content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger></tabTrigger>
+    <!-- Optional: Scope the tab trigger will be active in -->
+    <scope>text</scope>
+    <!-- Optional: Description to show in the menu -->
+    <description>New Snippet</description>
+</snippet>

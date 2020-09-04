@@ -1,0 +1,19 @@
+{
+        "scope": "text.tex.latex",
+
+        "completions":
+        [
+                { "trigger": "abs", "contents": "\\abs{$0}" },
+                { "trigger": "norm", "contents": "\\norm{$0}" },
+                { "trigger": "inn", "contents": "\\in $0" },
+                { "trigger": "bar", "contents": "\\overline{$1}$0" },
+                { "trigger": "hat", "contents": "\\hat{$1}$0" },
+                { "trigger": "notin", "contents": "\\not\\in" },
+                { "trigger": "Re", "contents": "\\Re $0" },
+                { "trigger": "Im", "contents": "\\Im $0" },
+                { "trigger": "AA", "contents": "∀"},
+                { "trigger": "EE", "contents": "∃"},
+                { "trigger": "oo", "contents": "\\infty"},
+                { "trigger": "sp", "contents": "\\langle $0 \\rangle"},
+        ]
+}

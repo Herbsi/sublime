@@ -1,0 +1,23 @@
+{
+	"auto_complete": true,
+	"auto_complete_triggers":
+	[
+		{
+			"characters": "\\",
+			"selector": "text.tex.latex"
+		}
+	],
+	"color_scheme": "Packages/Nord/Nord.sublime-color-scheme",
+	"font_face": "Fira Code",
+	"font_optios":
+	[
+		"dlig"
+	],
+	"font_size": 14,
+	"highlight_line": false,
+	"ignored_packages":
+	[
+	],
+	"line_numbers": false,
+	"translate_tabs_to_spaces": true
+}

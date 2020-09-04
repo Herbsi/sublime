@@ -1,0 +1,348 @@
+
+[
+    // Expand Region
+    { "keys": ["super+ctrl+space"], "command": "expand_region"},
+    {
+      "keys": ["super+ctrl+z"],
+      "command": "expand_region",
+      "args": {"undo": true},
+      "context": [{ "key": "expand_region-soft_undo"}]
+    },
+
+    // Auto-LaTeX-Snippets
+    { "keys": ["i", "n", "n"], "command": "latexyz_insert_snippet", "args": {"contents": "\\in"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+
+    { "keys": ["<", "="], "command": "latexyz_insert_snippet", "args": {"contents": "\\leq"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+
+    { "keys": [">", "="], "command": "latexyz_insert_snippet", "args": {"contents": "\\geq"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+
+    { "keys": ["|", "-", ">"], "command": "latexyz_insert_snippet", "args": {"contents": "\\mapsto"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+
+
+    { "keys": ["-", ">"], "command": "latexyz_insert_snippet", "args": {"contents": "\\rightarrow"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+
+    { "keys": ["!", "="], "command": "latexyz_insert_snippet", "args": {"contents": "\\neq"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+
+    //--- Sets 
+
+    { "keys": ["R", "R"], "command": "latexyz_insert_snippet", "args": {"contents": "\\RR"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },        
+
+    { "keys": ["C", "C"], "command": "latexyz_insert_snippet", "args": {"contents": "\\CC"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },        
+
+    { "keys": ["N", "N"], "command": "latexyz_insert_snippet", "args": {"contents": "\\NN"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },        
+
+    { "keys": ["Q", "Q"], "command": "latexyz_insert_snippet", "args": {"contents": "\\QQ"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+
+    { "keys": ["Z", "Z"], "command": "latexyz_insert_snippet", "args": {"contents": "\\ZZ"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },        
+
+    { "keys": ["P", "P"], "command": "latexyz_insert_snippet", "args": {"contents": "\\PP"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },        
+
+
+    // Use ";" as prefix key because it's more ergonomic than "`"
+    { "keys": [";", "^"], "command": "latexyz_insert_snippet", "args": {"contents": "\\hat{$0}", "create_fields": true}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "_"], "command": "latexyz_insert_snippet", "args": {"contents": "\\bar{$0}", "create_fields": true}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "/"], "command": "latexyz_insert_snippet", "args": {"contents": "\\frac{$1}{$0}", "create_fields": true}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+
+    { "keys": [";", "."], "command": "latexyz_insert_snippet", "args": {"contents": "\\cdot"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },   
+
+    { "keys": [";", "0"], "command": "insert_snippet", "args": {"contents": "\\varnothing"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "2"], "command": "latexyz_insert_snippet", "args": {"contents": "\\sqrt{$0}", "create_fields": true}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "6"], "command": "insert_snippet", "args": {"contents": "\\partial"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "8"], "command": "insert_snippet", "args": {"contents": "\\infty"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", ","], "command": "insert_snippet", "args": {"contents": "\\nonumber"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+
+    // Greek letters
+    { "keys": [";", "a"], "command": "insert_snippet", "args": {"contents": "\\alpha"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "b"], "command": "insert_snippet", "args": {"contents": "\\beta"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "g"], "command": "insert_snippet", "args": {"contents": "\\gamma"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "d"], "command": "insert_snippet", "args": {"contents": "\\delta"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "e"], "command": "insert_snippet", "args": {"contents": "\\varepsilon"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "z"], "command": "insert_snippet", "args": {"contents": "\\zeta"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "h"], "command": "insert_snippet", "args": {"contents": "\\eta"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "q"], "command": "insert_snippet", "args": {"contents": "\\theta"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "i"], "command": "insert_snippet", "args": {"contents": "\\iota"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "k"], "command": "insert_snippet", "args": {"contents": "\\kappa"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "l"], "command": "insert_snippet", "args": {"contents": "\\lambda"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "m"], "command": "insert_snippet", "args": {"contents": "\\mu"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "n"], "command": "insert_snippet", "args": {"contents": "\\nu"}, "context":
+             [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "x"], "command": "insert_snippet", "args": {"contents": "\\xi"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "p"], "command": "insert_snippet", "args": {"contents": "\\pi"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "r"], "command": "insert_snippet", "args": {"contents": "\\rho"}, "context":
+             [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "s"], "command": "insert_snippet", "args": {"contents": "\\sigma"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "t"], "command": "insert_snippet", "args": {"contents": "\\tau"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "u"], "command": "insert_snippet", "args": {"contents": "\\upsilon"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "f"], "command": "insert_snippet", "args": {"contents": "\\varphi"}, "context":
+             [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "c"], "command": "insert_snippet", "args": {"contents": "\\chi"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "y"], "command": "insert_snippet", "args": {"contents": "\\psi"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "w"], "command": "insert_snippet", "args": {"contents": "\\omega"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "G"], "command": "insert_snippet", "args": {"contents": "\\Gamma"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "D"], "command": "insert_snippet", "args": {"contents": "\\Delta"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "Q"], "command": "insert_snippet", "args": {"contents": "\\Theta"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "L"], "command": "insert_snippet", "args": {"contents": "\\Lambda"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "X"], "command": "insert_snippet", "args": {"contents": "\\Xi"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "P"], "command": "insert_snippet", "args": {"contents": "\\Pi"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "S"], "command": "insert_snippet", "args": {"contents": "\\Sigma"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "Y"], "command": "insert_snippet", "args": {"contents": "\\Upsilon"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "F"], "command": "insert_snippet", "args": {"contents": "\\Phi"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "Y"], "command": "insert_snippet", "args": {"contents": "\\Psi"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+        
+    { "keys": [";", "W"], "command": "insert_snippet", "args": {"contents": "\\Omega"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        }
+]
