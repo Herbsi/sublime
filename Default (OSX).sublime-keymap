@@ -16,6 +16,13 @@
             ]
         },
 
+    { "keys": ["x", "x"], "command": "latexyz_insert_snippet", "args": {"contents": "\\times"}, "context":
+            [
+                { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }
+            ]
+        },
+
+
     { "keys": ["<", "="], "command": "latexyz_insert_snippet", "args": {"contents": "\\leq"}, "context":
             [
                 { "key": "selector", "operator": "equal", "operand": "text.tex.latex meta.environment.math" }

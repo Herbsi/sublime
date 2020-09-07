@@ -17,6 +17,7 @@
 	"highlight_line": false,
 	"ignored_packages":
 	[
+		"Vintage",
 	],
 	"line_numbers": false,
 	"translate_tabs_to_spaces": true
