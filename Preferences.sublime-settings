@@ -8,12 +8,8 @@
 		}
 	],
 	"color_scheme": "Packages/Nord/Nord.sublime-color-scheme",
-	"font_face": "Fira Code",
-	"font_optios":
-	[
-		"dlig"
-	],
-	"font_size": 14,
+	"font_face": "Fira Mono",
+	"font_size": 13.5,
 	"highlight_line": false,
 	"ignored_packages":
 	[
