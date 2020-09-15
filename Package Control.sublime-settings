@@ -2,6 +2,9 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"fish",
+		"HTML-CSS-JS Prettify",
+		"HTML5"
 	],
 	"installed_packages":
 	[

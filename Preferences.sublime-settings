@@ -7,13 +7,13 @@
 			"selector": "text.tex.latex"
 		}
 	],
-	"color_scheme": "Packages/Nord/Nord.sublime-color-scheme",
-	"font_face": "Fira Mono",
+
 	"font_size": 13.5,
+	"font_face": "Fira Code",
 	"highlight_line": false,
 	"ignored_packages":
 	[
-		"Vintage",
+		"Vintage"
 	],
 	"line_numbers": false,
 	"translate_tabs_to_spaces": true
