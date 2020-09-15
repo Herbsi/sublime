@@ -2,9 +2,6 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"fish",
-		"HTML-CSS-JS Prettify",
-		"HTML5"
 	],
 	"installed_packages":
 	[
@@ -32,11 +29,13 @@
 		"Nord",
 		"Package Control",
 		"Python 3",
+		"Racket",
 		"RustFmt",
 		"SideBarEnhancements",
 		"SideBarTools",
 		"SublimeCodeIntel",
 		"SublimeLinter",
+		"SublimeREPL",
 		"UnicodeMath"
 	],
 	"repositories":
